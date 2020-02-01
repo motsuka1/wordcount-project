@@ -1,0 +1,11 @@
+<h1>wordcount</h1>
+
+<form action="{% url 'about' %}">
+  <input type="submit" value="about this page"/>
+</form>
+
+<form action="{% url 'count' %}"> <!-- is to run python script work in html script-->
+  <textarea name="fulltext" rows="10" cols="40"></textarea>
+  <br />
+  <input type="submit" value="count!" />
+</form>
